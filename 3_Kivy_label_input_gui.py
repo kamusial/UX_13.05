@@ -38,6 +38,9 @@ class MyGrid(GridLayout):
         nazwisko = self.nazwisko.text
         rok_urodz = self.rok_urodzenia.text
         print(f'Imię: {imie}, nazwisko: {nazwisko}\nrok urodzenia: {rok_urodz}')
+        self.imie.text = ''
+        self.nazwisko.text = ''
+        self.rok_urodzenia.text = ''
 
 class MyApp(App):
     def build(self):
