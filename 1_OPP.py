@@ -8,6 +8,10 @@ class Auto:
         self.wiek = 2023 - rok_produkcji
         self.przebieg = 0
 
+    def __str__(self):
+        napis = (f'Auto ma kolor {self._kolor} i ma {self.wiek} lat')
+        return napis
+
     def aktualizacja_przebiegu(self, przebieg):
         if przebieg > 0:
             self.przebieg += przebieg
@@ -46,5 +50,5 @@ moje_auto.aktualizacja_przebiegu(20)
 print(moje_auto.przebieg)
 moje_auto.aktualizacja_przebiegu(-50)
 print(moje_auto.przebieg)
-
+print(moje_auto)
 
